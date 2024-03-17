@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinead Roussel - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="fond-page">
+      <div class="page">
+        <img
+          src="images/logo.png"
+          alt="Logo de Sinead Roussel"
+          class="logo"
+          height="120"
+          width="170"
+        />
+        <div class="menu">
+          <div class="menu-gauche">
+            <a href="index.html">Accueil</a>
+            <a href="femme.html">Femme</a>
+            <a href="homme.html">Homme</a>
+            <a href="enfant.html">Enfant</a>
+          </div>
+
+          <div class="menu-droite">
+            <a href="connexion.html" class="lien-page-actuelle">Se connecter</a>
+            <span class="séparateur">/</span>
+            <a href="">Panier</a>
+            <span class="séparateur">/</span>
+            <a href="">A propos</a>
+          </div>
+        </div>
+
+        <div class="contenu-page">
+          <div class="page-connexion-inscription">
+            <div class="formulaire-connexion">
+              <h2>Déja inscrit ?</h2>
+              <div class="champ-formulaire">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="champ-formulaire">
+                <label>Mot de passe</label>
+                <input type="password" />
+              </div>
+              <button type="submit">Se connecter</button>
+            </div>
+
+            <div class="formulaire-inscription">
+              <h2>S'inscrire</h2>
+              <div class="champ-formulaire">
+                <label>Email</label>
+                <input type="email" />
+              </div>
+              <div class="champ-formulaire">
+                <label>Mot de passe</label>
+                <input type="password" />
+              </div>
+              <div class="champ-formulaire">
+                <label for="confirmation-mot-de-passe">
+                    Confirmation mot de passe
+                </label>
+                <input
+                  type="password"
+                  id="confirmation-mot-de-passe"
+                  name="confirmation-mot-de-passe"
+                  required
+                />
+              </div>
+              <button type="submit">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-gauche">
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">Facebook</a>
+          </div>
+
+          <div class="menu-droite">
+            <a href="">Aide</a>
+            <span class="séparateur">/</span>
+            <a href="">Nous contacter</a>
+            <span class="séparateur">/</span>
+            <select name="langue" id="langue">
+              <option value="fr" selected>Français</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
