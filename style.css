@@ -1,0 +1,192 @@
+/* CONTENU GENERAL PAGE */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lien-page-actuelle {
+    font-weight: bold;
+}
+
+.fond-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/arriere-plan.jpeg');
+    background-size: cover;
+    background-position: center bottom;
+    z-index: -1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 8px 20px;
+}
+
+.menu-gauche {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-droite {
+    display: flex;
+    gap: 20px;
+}
+
+.contenu-page {
+    min-height: 50vh;
+}
+
+/* PRODUITS BOUTIQUE */
+
+.liste-produits {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: aliceblue;
+    padding-bottom: 10px;
+}
+
+.produit img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produit h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.produit p {
+    margin: 0;
+}
+
+/* PAGE CONNEXION */
+
+.page-connexion-inscription {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 50px;
+}
+
+.formulaire-connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+    padding: 20px 100px;
+    border: 1px solid black;
+}
+
+.formulaire-inscription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+    padding: 20px 100px;
+    border: 1px solid black;
+}
+
+.champ-formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .page {
+        padding: 80px 20px;
+    }
+
+    .menu {
+        padding: 8px 10px;
+    }
+
+    .menu-gauche {
+        gap: 20px;
+    }
+
+    .menu-droite {
+        gap: 10px;
+    }
+
+    .liste-produits {
+        padding-top: 20px;
+    }
+
+    .produit img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .page-connexion-inscription {
+        padding: 50px 20px;
+    }
+
+    .formulaire-connexion {
+        padding: 20px 50px;
+    }
+
+    .formulaire-inscription {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-gauche {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-droite {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulaire-connexion {
+        padding: 20px 20px;
+    }
+
+    .formulaire-inscription {
+        padding: 20px 20px;
+    }
+
+    .séparateur {
+        display: none;
+    }
+
+    .page-connexion-inscription {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
